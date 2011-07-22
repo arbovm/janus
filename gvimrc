@@ -60,6 +60,8 @@ if has("gui_macvim")
   " Adjust viewports to the same size
   map <Leader>= <C-w>=
   imap <Leader>= <Esc> <C-w>=
+
+  set background=light
 endif
 
 " Don't beep
@@ -69,13 +71,7 @@ set visualbell
 set guioptions-=T
 
 " Default gui color scheme
-color ir_black
-
-" ConqueTerm wrapper
-function StartTerm()
-  execute 'ConqueTerm ' . $SHELL . ' --login'
-  setlocal listchars=tab:\ \ 
-endfunction
+color solarized
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))

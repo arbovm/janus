@@ -33,6 +33,9 @@ set laststatus=2
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
 
+nnoremap <Space> <Nop>
+let mapleader=" "
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
@@ -125,7 +128,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color solarized
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -147,3 +150,4 @@ set showcmd
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+set background=dark
