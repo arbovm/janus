@@ -132,6 +132,8 @@ set modelines=10
 
 " Default color scheme
 color solarized
+set background=dark
+call togglebg#map("<F5>")
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -153,4 +155,3 @@ set showcmd
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-set background=dark
