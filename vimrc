@@ -36,6 +36,9 @@ set noequalalways
 nnoremap <Space> <Nop>
 let mapleader=" "
 
+" load snipmate-snippets
+source ~/.vim/snippets/support_functions.vim
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
