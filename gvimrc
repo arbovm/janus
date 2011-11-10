@@ -57,11 +57,8 @@ if has("gui_macvim")
   map <D-M-Left> <C-w>h
   imap <D-M-Left> <C-w>h
 
-  " Adjust viewports to the same size
-  map <Leader>= <C-w>=
-  imap <Leader>= <Esc> <C-w>=
-
   set background=light
+  call togglebg#map("<F5>")
 endif
 
 " Don't beep

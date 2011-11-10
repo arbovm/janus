@@ -119,9 +119,9 @@ let g:syntastic_quiet_warnings=1
 
 " gist-vim defaults
 if has("mac")
-  let g:gist_clip_command = 'pbcopy'
+ let g:gist_clip_command = 'pbcopy'
 elseif has("unix")
-  let g:gist_clip_command = 'xclip -selection clipboard'
+ let g:gist_clip_command = 'xclip -selection clipboard'
 endif
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
@@ -133,7 +133,6 @@ set modelines=10
 " Default color scheme
 color solarized
 set background=dark
-call togglebg#map("<F5>")
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -153,5 +152,5 @@ set showcmd
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+ "source ~/.vimrc.local
 endif
