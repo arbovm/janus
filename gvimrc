@@ -1,6 +1,7 @@
 if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
+  au GUIEnter * set fullscreen
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
@@ -57,7 +58,7 @@ if has("gui_macvim")
   map <D-M-Left> <C-w>h
   imap <D-M-Left> <C-w>h
 
-  set background=light
+  set background=dark
   call togglebg#map("<F5>")
 endif
 
